@@ -58,7 +58,6 @@ export interface PersonalInfo {
   };
   stats: {
     yearsExperience: number;
-    // completedSoftware: number;
-    // completedAnimations: number;
+    completedSoftware: number;
   };
 }

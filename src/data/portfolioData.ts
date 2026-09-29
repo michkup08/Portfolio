@@ -5,7 +5,7 @@ export const personalInfo: PersonalInfo = {
   titles: [
     'Software developer',
   ],
-  bio: 'Creative Engineer',
+  bio: 'Creative Engineer specializing in developing high-performance applications.',
   status: 'Open for freelance hire or job offerts',
   location: 'Silesia',
   residence: 'Poland',
@@ -16,7 +16,8 @@ export const personalInfo: PersonalInfo = {
     discord: 'michal1309'
   },
   stats: {
-    yearsExperience: 2
+    yearsExperience: 2,
+    completedSoftware: 10
   }
 };
 
@@ -34,114 +35,102 @@ export const services: Service[] = [
     description: 'System with division for 2 or mode aplication, can include user veryfication, payment systems, database management and more.',
     iconName: '',
     techStack: ['Typescript', 'React js + Next js/React native', 'Any backend language', 'Postgres']
-  },
-  // {
-  //   id: 'gamedev',
-  //   title: 'Game Development',
-  //   description: '...',
-  //   iconName: 'Gamepad2',
-  //   techStack: ['C#', 'Unity']
-  // },
-  // {
-  //   id: 'frontend',
-  //   title: 'Frontend',
-  //   description: '',
-  //   iconName: 'Terminal',
-  //   techStack: ['React-JS', 'React-Native', 'Typescript/Javascript']
-  // },
-  // {
-  //   id: 'backend',
-  //   title: 'Backend',
-  //   description: '',
-  //   iconName: 'Terminal',
-  //   techStack: ['Java + Spring Boot', 'Node js']
-  // },
-  // {
-  //   id: 'databases',
-  //   title: 'Databases',
-  //   description: '',
-  //   iconName: 'Terminal',
-  //   techStack: ['Postgres', 'SQL Server', 'Oracle']
-  // },
-  // {
-  //   id: 'machineLerning',
-  //   title: 'Focused on reinforcement learning',
-  //   description: '',
-  //   iconName: 'Terminal',
-  //   techStack: ['Python', 'PyTorch', 'Unity ML-Agents Toolkit']
-  // },
+  }
 ];
 
 export const projects: Project[] = [
   {
-    id: 'python-gestures',
-    title: 'Python Gestures',
-    category: 'Computer Vision',
-    description: 'System rozpoznawania gestów w czasie rzeczywistym napisany w języku Python. Wykorzystuje zaawansowane biblioteki do śledzenia dłoni i mapowania ruchu na konkretne akcje.',
-    content: '<p><strong>Python Gestures</strong> to innowacyjny projekt bazujący na widzeniu komputerowym (Computer Vision). Program analizuje obraz z kamery w czasie rzeczywistym, wykrywając dłonie i ich ułożenie. Dzięki zaawansowanym algorytmom, aplikacja potrafi przetłumaczyć fizyczne gesty użytkownika na konkretne komendy w systemie komputerowym.</p><br/><p>Główne technologie wykorzystane w projekcie to <strong>Python</strong>, <strong>OpenCV</strong> oraz biblioteki do uczenia maszynowego zajmujące się detekcją (np. MediaPipe). Projekt ten świetnie demonstruje połączenie sztucznej inteligencji z interfejsami człowiek-maszyna (HMI).</p>',
-    tags: ['Python', 'Computer Vision', 'OpenCV', 'MediaPipe'],
-    image: '/images/project1.jpg',
-    githubUrl: 'https://github.com/michkup08/PythonGestures',
+    id: 'training-app',
+    title: 'TrainingApp',
+    category: 'Full Stack Development',
+    description: 'A web application that combines workout planning with social features, allowing users to create training routines, track progress, and communicate in real-time.',
+    content: '<p><strong>TrainingApp</strong> is a comprehensive full-stack web application designed to support the implementation of training plans while integrating social interaction features. It allows users to create personalized weekly workout schedules, track their execution progress, and find personal trainers directly within the platform.</p><br/><p>Built with React, TypeScript, and Spring Boot, the application offers real-time communication via WebSockets for chatting and sharing workout plans, alongside a community feed for posts and comments. It also leverages an AI API to provide intelligent feedback on user-generated workout routines.</p>',
+    tags: ['React', 'Spring Boot', 'TypeScript', 'WebSockets', 'MySQL'],
+    image: '/images/trainingapp.png',
+    githubUrl: 'https://github.com/michkup08/TrainingApp',
+    featured: true
+  },
+  {
+    id: 'UnityMLAgents',
+    title: 'Unity ML Agents',
+    category: 'Machine Learning + Graphics',
+    description: 'A research project evaluating the effectiveness and stability of various reinforcement learning algorithms for generating movement in 3D animations using Unity and ML-Agents.',
+    content: '<p><strong>RL Movement Generation</strong> focuses on researching and evaluating the effectiveness and stability '
+    + 'of selected reinforcement learning algorithms used to generate movement in 3D animations. The experiments and '
+    + 'simulations were conducted using the Unity game engine alongside the ML-Agents toolkit.</p><br/><p>The project '
+    + 'compares default framework algorithms like PPO (Proximal Policy Optimization) and SAC (Soft Actor-Critic) with '
+    + 'alternative approaches designed to bypass their limitations, namely PPG (Phasic Policy Gradient) '
+    + 'and DroQ (Dropout Q-Functions).</p>',
+    tags: ['Unity', 'Machine Learning', 'Reinforcement Learning', 'ML-Agents'],
+    image: '/images/rl.png',
+    githubUrl: 'https://github.com/michkup08/RL-Movement-Generation',
     featured: true
   },
   {
     id: 'organoid-review',
     title: 'Organoid Review',
-    category: 'Data Science',
-    description: 'Narzędzie oparte o Pythona służące do przetwarzania, analizy i przeglądu danych dotyczących organoidów. Usprawnia pracę z danymi badawczymi i medycznymi.',
-    content: '<p><strong>Organoid Review</strong> to zaawansowany projekt badawczy ukierunkowany na analizę danych. Służy do automatyzacji procesów przetwarzania informacji i wizualizacji eksperymentów z wykorzystaniem nowoczesnych narzędzi data science.</p><br/><p>Dzięki zastosowaniu bibliotek analitycznych w Pythonie, projekt ułatwia i przyspiesza generowanie raportów i analiz statystycznych na dużych zbiorach danych medycznych.</p>',
-    tags: ['Python', 'Data Analysis', 'Research', 'Machine Learning'],
-    image: '/images/project2.jpg',
+    category: 'Computer Vision + Full Stack Development',
+    description: "A tool leveraging computer vision technologies, Python, and software such as Blender, Flask, and React, designed for the processing, analysis, and review of organoid data. It streamlines workflows involving research and medical data.",
+    content: "<p><strong>Organoid Review</strong> is an advanced research project focused on data analysis. "
+      + "It automates information processing and the visualization of experimental results.</p>"
+      + "<br/><p>By utilizing Python-based analytical libraries, the project facilitates and accelerates the generation of reports and statistical analyses based on extensive medical datasets.</p>",
+    tags: ['Python', 'Data Analysis', 'Blender', 'Flask', 'React js'],
+    image: '/images/organoid.gif',
     githubUrl: 'https://github.com/michkup08/Organoid-Review',
     featured: true
   },
   {
-    id: 'gk-project',
-    title: 'Grafika Komputerowa (GK)',
-    category: 'Graphics Development',
-    description: 'Rozbudowany silnik lub projekt renderowania grafiki komputerowej stworzony w języku C#. Skupia się na symulacjach, oświetleniu i interakcji z trójwymiarowymi obiektami.',
-    content: '<p>Złożony projekt programistyczny napisany w <strong>C#</strong>, eksplorujący zagadnienia grafiki komputerowej. Rozwiązuje problemy związane z transformacjami w przestrzeni 3D, optymalizacją wyświetlania i shadingiem.</p><br/><p>Jest to świetny dowód na dogłębne zrozumienie matematyki stojącej za grafiką trójwymiarową oraz umiejętność budowania wydajnego kodu do symulacji.</p>',
-    tags: ['C#', '3D Graphics', 'Rendering', 'Math'],
-    image: '/images/project3.jpg',
-    githubUrl: 'https://github.com/michkup08/GK-Project'
-  },
-  {
-    id: 'mapa-cen',
-    title: 'Mapa Cen API',
-    category: 'Backend Architecture',
-    description: 'Silnik serwerowy (API) napisany w środowisku C#. Służy do gromadzenia, weryfikowania i udostępniania danych o cenach, zapewniając wydajną komunikację z aplikacją kliencką.',
-    content: '<p><strong>MapaCenBackend</strong> to kluczowa część architektury aplikacji do śledzenia i mapowania cen. Projekt to w pełni funkcjonalne <strong>REST API</strong> zbudowane w oparciu o framework C# / .NET.</p><br/><p>Odpowiada za bezpieczną komunikację z bazą danych, uwierzytelnianie użytkowników oraz przetwarzanie zapytań o statystyki cenowe z niskim opóźnieniem.</p>',
-    tags: ['C#', '.NET', 'REST API', 'Backend'],
-    image: '/images/project4.jpg',
-    githubUrl: 'https://github.com/michkup08/MapaCenBackend'
+    id: 'rocket',
+    title: 'Rakieta',
+    category: 'Graphic',
+    "description": "A Unity-based VR space flight simulator integrated with the Yaw 3 motion chair for a highly immersive physical experience.",
+    "content": "<p><strong>Space Rocket Simulator</strong> is an immersive VR project built in Unity that lets users fly a rocket through space.</p><br/><p>By integrating with the <strong>Yaw 3</strong> motion simulator (shown in image_710f08.png), every in-game maneuver—pitch, roll, and yaw—is instantly translated into real physical movement, providing an incredibly realistic space flight experience.</p>",
+    tags: ['C#', 'Unity', 'Virtual Reality', 'Yaw 3'],
+    image: '/images/yaw3.jpg',
+    githubUrl: 'https://github.com/michkup08/Rakieta',
+    featured: true
   }
 ];
 
 export const experience: ExperienceItem[] = [
   {
-    id: 'exp-1',
-    title: 'AI/ML Engineer',
-    organization: 'Tech University',
-    period: 'Feb 2024 - Present',
-    roleType: 'work',
-    description: 'Working on computer vision programs for character feature detection and a chatbot project based on LLM models with RAG database integration.'
+    id: 'edu-1',
+    title: 'Master of Engineering - Computer Science',
+    organization: 'Silesian University of Technology, Gliwice',
+    period: 'Oct 2025 - Sep 2026',
+    roleType: 'education',
+    description: 'Master\'s degree studies in Computer Science.'
   },
   {
-    id: 'edu-1',
-    title: 'Computer Science - Master\'s degree',
-    organization: 'Tech University',
-    period: 'Feb 2022 - Sep 2023',
+    id: 'exp-1',
+    title: 'Full-Stack Developer',
+    organization: 'Junisoftex',
+    period: 'Jan 2025 - Current',
+    roleType: 'work',
+    description: 'Integration of the e-invoicing system with a newly implemented mobile application (React Native + PHP). Development of employee time-tracking and leave request management systems.'
+  },
+  {
+    id: 'edu-2',
+    title: 'Bachelor of Engineering - Computer Science',
+    organization: 'Silesian University of Technology, Gliwice',
+    period: 'Oct 2021 - Feb 2025',
     roleType: 'education',
-    description: 'Specialization in design and programming of games and simulations in engines and graphics APIs. Classes in computer vision and advanced rendering.',
-    link: '#',
-    linkText: 'Thesis'
+    description: 'Bachelor\'s degree studies in Computer Science.'
   },
   {
     id: 'exp-2',
-    title: 'Unity 3D / HLSL Developer',
-    organization: 'VR Innovations',
-    period: 'Jan 2022 - Jan 2024',
+    title: 'Full-Stack Developer Intern',
+    organization: 'ENTE Sp. Z o.o',
+    period: 'Jul 2024 - Aug 2024',
     roleType: 'work',
-    description: 'Design and implementation of 3D simulations in a virtual environment. Specializing in developing custom AR/VR solutions and communicating with specialized hardware.'
+    description: 'Worked on a dynamic passenger information system using Spring Boot and Angular. Collaborated in a cross-functional team, gaining experience in backend APIs, frontend components, and database interactions.'
+  },
+  {
+    id: 'exp-3',
+    title: 'C++ Developer Intern',
+    organization: 'ENTE Sp. Z o.o',
+    period: 'Jul 2023 - Sep 2023',
+    roleType: 'work',
+    description: 'Participated in software development for embedded systems. Contributed to performance optimization of C++ code.'
   }
 ];

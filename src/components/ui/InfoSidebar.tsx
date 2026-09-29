@@ -23,7 +23,7 @@ export function InfoSidebarContent() {
     <>
       <div className="p-8 flex flex-col items-center text-center border-b border-white/10 relative">
         <div className="w-28 h-28 rounded-full mb-5 relative overflow-hidden border border-white/10">
-          <Image src="/images/profile.jpg" alt="Profile" fill className="object-cover" />
+          <Image src="/images/Profil.png" alt="Profile" fill className="object-cover" />
         </div>
         <h2 className="text-xl font-semibold text-white/90">{personalInfo.name}</h2>
         <p className="text-sm text-white/50 mt-2 flex flex-col gap-1">

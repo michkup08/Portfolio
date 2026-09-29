@@ -61,14 +61,10 @@ export default function Page() {
                   <div className="text-4xl font-bold text-white mb-2">{personalInfo.stats.yearsExperience}+</div>
                   <div className="text-sm text-white/50 uppercase tracking-wider">Years Experience</div>
                 </div>
-                {/* <div>
+                <div>
                   <div className="text-4xl font-bold text-white mb-2">{personalInfo.stats.completedSoftware}</div>
                   <div className="text-sm text-white/50 uppercase tracking-wider">Completed Software</div>
                 </div>
-                <div>
-                  <div className="text-4xl font-bold text-white mb-2">{personalInfo.stats.completedAnimations}</div>
-                  <div className="text-sm text-white/50 uppercase tracking-wider">Completed Animations</div>
-                </div> */}
               </div>
             </FadeIn>
           </section>
